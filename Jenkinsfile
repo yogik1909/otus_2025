@@ -2,9 +2,9 @@
 pipeline {
     agent any
     stages {
-        stage('Build') {
+        stage('loadrepo') {
             steps {
-                bat 'echo test'
+                bat 'vrunner loadrepo'
             }
         }
     }
