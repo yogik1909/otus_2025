@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('loadrepo') {
             steps {
-                bat 'chcp 65001/n vrunner loadrepo'
+                bat 'chcp 65001\n vrunner loadrepo'
             }
         }
     }
