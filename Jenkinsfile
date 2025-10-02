@@ -9,7 +9,7 @@ pipeline {
         }
         stage('syntax-check') {
             steps {
-                bat 'chcp 65001\n vrunner syntax-check --mode -EmptyHandles -HandlersExistence'
+                bat 'chcp 65001\n vrunner syntax-check --mode -HandlersExistence'
             }
         }
     }
