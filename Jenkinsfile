@@ -7,5 +7,10 @@ pipeline {
                 bat 'chcp 65001\n vrunner loadrepo'
             }
         }
+        stage('syntax-check') {
+            steps {
+                bat 'chcp 65001\n vrunner syntax-check'
+            }
+        }
     }
 }
